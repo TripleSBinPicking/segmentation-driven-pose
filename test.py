@@ -53,7 +53,7 @@ def evaluate(data_cfg, weightfile, listfile, outdir, object_names, intrinsics, v
         print('%s: Visualization in %f seconds.' % (imgfile, (vis_finish - vis_start)))
 
 if __name__ == '__main__':
-    use_gpu = True
+    use_gpu = False
     dataset = 'Occluded-LINEMOD'
     outdir = './Occluded-LINEMOD-Out'
 

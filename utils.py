@@ -277,7 +277,7 @@ def visualize_predictions(predPose, image, vertex, intrinsics):
         kernel = np.ones((5,5), np.uint8)
         maskImg = cv2.morphologyEx(maskImg, cv2.MORPH_CLOSE, kernel)
         # find contour
-        contours, _ = cv2.findContours(maskImg, mode=cv2.RETR_EXTERNAL, method=cv2.CHAIN_APPROX_SIMPLE)
+        contours, _ = cv2.findContours(maskImg, mode=cv2.RETR_EXTERNAL, method=cv2.CHAIN_APPROX_SIMPLE)[-2:]
         contourImg = cv2.drawContours(contourImg, contours, -1, (255, 255, 255), 4, cv2.LINE_AA) # border
         contourImg = cv2.drawContours(contourImg, contours, -1, get_class_colors(outid), 2, cv2.LINE_AA)
 

@@ -54,13 +54,11 @@ def evaluate(data_cfg, weightfile, listfile, outdir, object_names, intrinsics, v
 
 if __name__ == '__main__':
     use_gpu = True
-    # use_gpu = False
-    # #
-    # dataset = 'Occluded-LINEMOD'
-    # outdir = './Occluded-LINEMOD-Out'
+    dataset = 'Occluded-LINEMOD'
+    outdir = './Occluded-LINEMOD-Out'
 
-    dataset = 'YCB-Video'
-    outdir = './exp007-Result'
+    # dataset = 'YCB-Video'
+    # outdir = './exp007-Result'
 
     # dataset = 'our-YCB-Video'
     # outdir = './our-YCB-result'

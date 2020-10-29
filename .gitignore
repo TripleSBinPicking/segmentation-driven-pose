@@ -116,3 +116,4 @@ dmypy.json
 .idea/
 model/*.pth
 data/OcclusionChallengeICCV2015
+occluded-linemod-testlist.txt

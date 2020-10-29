@@ -22,20 +22,5 @@ def collect_ycb_testlist(testListFile, rootpath, outfile):
 
 if __name__ == '__main__':
     # modify the path according to your real path of the Occluded-LINEMOD and YCB-Video dataset
-    #
-    # occluded_linemod_path = '/data/OcclusionChallengeICCV2015/'
-    # collect_occluded_linemod_testlist(occluded_linemod_path, './occluded-linemod-testlist.txt')
-
-    print("Generate path of YCB...")
-    # ycb_video_path = '/media/data_2/YCB/data'
-    # testListFile = '/media/data_2/YCB/YCB_Video_toolbox/keyframe.txt'
-
-    ycb_video_path = '/data/vision/billf/scratch/zelin/YCB/YCB_Video_Dataset/data'
-    testListFile = "/data/vision/billf/scratch/zelin/YCB/YCB_Video_Dataset/image_sets/keyframe.txt"
-    collect_ycb_testlist(testListFile, ycb_video_path, './ycb-video-testlist.txt')
-    print("Generation Done!")
-
-    # print("Generate path of our YCB...")
-    # our_ycb_path = './data/our-YCB'
-    # collect_our_ycb(our_ycb_path, './ycb-video-testlist.txt')
-    # print("Generation Done!")
+    occluded_linemod_path = './data/OcclusionChallengeICCV2015/'
+    collect_occluded_linemod_testlist(occluded_linemod_path, './occluded-linemod-testlist.txt')
